@@ -22,9 +22,9 @@ describe('Qasir', function () {
         //merubah profile pengguna
         cy.get('.user-dropdown').click({force:true});
         cy.get('.dropdown-menu > :nth-child(3) > a').click({force:true});   
-        cy.get(':nth-child(3) > .col-md-8 > :nth-child(1) > :nth-child(1) > .form-group > .form-control').type('Keni',{force:true}).clear({force:true});
+        cy.get(':nth-child(3) > .col-md-8 > :nth-child(1) > :nth-child(1) > .form-group > .form-control').clear({force:true});
         cy.focused().clear({force:true});
-        cy.get(':nth-child(3) > .col-md-8 > :nth-child(1) > :nth-child(1) > .form-group > .form-control').type('Vio',{force:true});
+        cy.get(':nth-child(3) > .col-md-8 > :nth-child(1) > :nth-child(1) > .form-group > .form-control').type('Keni',{force:true});
         cy.get(':nth-child(3) > .col-md-8 > :nth-child(4) > .col-xs-12 > .form-group > .button').click({force:true});
         cy.get('.menu > :nth-child(2) > a').click({force:true});
         })
